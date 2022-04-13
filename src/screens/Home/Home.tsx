@@ -1,6 +1,6 @@
-import { Text, View } from "react-native"
+import { View } from "react-native"
 
-import { Profile } from "../../components"
+import { ButtonAdd, Profile } from "../../components"
 
 import { styles } from "./Home.styled"
 
@@ -9,6 +9,7 @@ export function Home() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Profile />
+        <ButtonAdd />
       </View>
     </View>
   )
