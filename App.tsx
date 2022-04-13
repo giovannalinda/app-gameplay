@@ -5,7 +5,7 @@ import { Rajdhani_500Medium, Rajdhani_700Bold} from '@expo-google-fonts/rajdhani
 
 import { StatusBar } from 'react-native'
 
-import { Home, SignIn } from './src/screens'
+import { Routes } from './src/routes'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <>
       <StatusBar barStyle="light-content"/>
-      <Home />
+      <Routes />
     </>
   )
 }
