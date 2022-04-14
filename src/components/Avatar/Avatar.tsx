@@ -1,7 +1,7 @@
-import { View, Image } from "react-native"
+import { Image } from "react-native"
 import { LinearGradient } from "expo-linear-gradient"
-import { theme } from "../../global/styles/theme"
 
+import { theme } from "../../global/styles/theme"
 import { styles } from "./Avatar.styled"
 
 type Props = {
@@ -10,6 +10,7 @@ type Props = {
 
 export function Avatar({ urlImage }: Props) {
   const { secondary50, secondary70 } = theme.colors
+
   return (
     <LinearGradient
       style={styles.container}

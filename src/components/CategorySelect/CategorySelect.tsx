@@ -1,4 +1,5 @@
 import { ScrollView } from "react-native"
+
 import { categories } from "../../utils/categories"
 import { Category } from "../Category/Category"
 
