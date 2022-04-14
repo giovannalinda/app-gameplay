@@ -8,21 +8,26 @@ type Props = TouchableOpacityProps & {
   title: string
   icon: React.FC<SvgProps>
   checked?: boolean
+  hasCheckBox?: boolean
 }
 
 export function Category({
   title,
   icon: Icon,
   checked = false,
+  hasCheckBox,
   ...rest
 }: Props) {
-
   return (
     <TouchableOpacity style={styles.container} {...rest}>
-      <View style={[styles.content, { opacity: checked ? 1 : 0.4 }]}>
-        <View style={
-          checked ? styles.checked : styles.check
-        } />
+      <View style={[styles.content, { opacity: checked ? 1 : 0.5 }]}>
+        {hasCheckBox && (
+          <View 
+            style={
+              checked ? styles.checked : styles.check
+            }
+          />
+        )}
 
         <Icon 
           width={48} 

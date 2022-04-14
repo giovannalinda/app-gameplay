@@ -12,10 +12,10 @@ const Stack: any = createNativeStackNavigator<NavigatorProps>()
 export function AuthRoutes() {
   return (
     <Stack.Navigator 
-      initialRouteName={SignIn}   
+      initialRouteName='SignIn'   
       screenOptions={{ 
         headerShown: false 
-      }}  
+      }}
     >
       <Stack.Screen name="SignIn" component={SignIn} />
       <Stack.Screen name="Home" component={Home} />

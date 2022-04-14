@@ -4,11 +4,12 @@ import { useNavigation } from '@react-navigation/native'
 import illustrationImg from '../../../assets/illustration.png'
 
 import { ButtonIcon } from '../../components'
+import type { UseNavigationProp } from '../../@types/navigation'
 
 import { styles } from './SignIn.styled'
 
 export function SignIn() {
-  const navigation = useNavigation()
+  const navigation = useNavigation<UseNavigationProp>()
 
   function handleSignIn() {
     navigation.navigate('Home')
